@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import ConfirmExchange from './Components/ConfirmExchange/ConfirmExchange'
+import Exchange from './Components/Exchange/Exchange'
+import Success from './Components/Success/Success';
+import { Switch, Route } from 'react-router-dom';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+class App extends React.Component {
+
+  render() {
+    return <div>
+      <Switch>
+        <Route path='/confirm/success' component={Success} />
+        <Route path='/confirm' component={ConfirmExchange} />
+        <Route path='/' exact={true} component={Exchange} />
+      </Switch>
     </div>
-  );
+  }
 }
 
 export default App;

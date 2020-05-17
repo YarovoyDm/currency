@@ -1,0 +1,62 @@
+.currencyItem {
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 15px;
+    border: solid 1px grey;
+    cursor: pointer;
+    outline: none;
+}
+
+.currencyItem:hover {
+    border: solid 1px red;
+}
+
+.exchangeBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+    height: 300px;
+}
+
+.exchangeButton{
+    width: 100px
+}
+
+.typeBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+
+.infoWrapper{
+    display: flex;
+}
+
+.type::first-letter {
+    text-transform: uppercase;
+}
+
+.type {
+    color: #333;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.currency {
+    margin-bottom: 25px;
+}
+
+.currencyInput {
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px grey;
+    outline: none;
+}
+
+.currencyInput:focus {
+    border: solid 1px red;
+}

@@ -1,0 +1,4 @@
+[0517/013647.253:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0517/022735.345:ERROR:process_info.cc(359)] UncheckedAllocate
+[0517/031938.019:ERROR:process_info.cc(359)] UncheckedAllocate
+[0517/181947.039:ERROR:settings.cc(320)] Settings magic is not 1129342067
